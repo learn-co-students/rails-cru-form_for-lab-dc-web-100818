@@ -1,0 +1,12 @@
+<h1>Artist Form</h1>
+
+<!-- Can I have a path for a new form go to artist_path if the artist that's being created hasn't been created yet? Or is it always necessary to have an index path and page also?-->
+<%= form_tag artists_path do %>
+  <label>Artist Name: </label><br>
+  <%= text_field_tag :'artist[name]' %><br>
+
+  <label>Artist Bio: </label><br>
+  <%= text_field_tag :'artist[bio]'%><br>
+
+  <%= submit_tag "Create Artist" %>
+<% end %>
